@@ -3013,6 +3013,83 @@ button[type="submit"] .form-loading {
   display: inline-block;
   margin-left: 8px;
 }
+.calc-list {
+  line-height: 50px;
+}
+.calc-list li {
+    height: 47px;
+    border-bottom: 1px solid rgba(119,124,130, .3);
+}
+.calc-list li:hover {
+    background-color: #34404c;
+}
+.calc-list a {
+    color: #777c82;
+    font-weight: 300;
+}
+.calc-list a:hover {
+    color: #fff;
+}
+.calc-list a:hover:after {
+  content: "\e65d";
+  color: #777c82;
+  font-family: 'themify';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 18px;
+  display: inline-block;
+  /*margin-left: 8px;*/
+
+  position: absolute;
+  right:0;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.calc-list a:before {
+    color: #777c82;
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 11px;
+    display: inline-block;
+  margin-right: 8px;
+}
+.calc-list a.holeinone:before {
+  content: "\e63a";
+  font-family: 'themify';
+}
+.calc-list a.jiwa:before {
+  content: "\e628";
+}
+.calc-list a.kebakaran:before {
+  content: "\f134";
+}
+.calc-list a.kecelakaandiri:before {
+  content: "\f007";
+}
+.calc-list a.kesehatan:before {
+  content: "\f0fa";
+}
+.calc-list a.mobil:before {
+  content: "\f1b9";
+}
+.calc-list a.travel:before {
+  content: "\f0b1";
+}
+.calc-list a.motor:before {
+  content: "\f21c";
+}
+.calc-list a.liability:before {
+  content: "\e628";
+}
 .widget ul:last-child,
 .widget p:last-child {
   margin-bottom: 0;
