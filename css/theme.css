@@ -4318,8 +4318,11 @@ video {
   margin: 0;
 }
 .post-snippet .inner {
-  background: #fff;
+  background: #f8f8f8 !important;
   padding: 24px;
+}
+.post-snippet .inner:hover {
+    background: #e8e8e8 !important;
 }
 .comments-list,
 .comments-list ul {
