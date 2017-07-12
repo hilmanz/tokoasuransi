@@ -520,9 +520,9 @@ blockquote .author {
   -webkit-column-count: 2;
 }
 @media all and (max-width: 767px) {
-  br {
+  /*br {
     display: none;
-  }
+  }*/
   blockquote {
     font-size: 16px;
     line-height: 32px;
@@ -4316,13 +4316,6 @@ video {
 }
 .post-snippet .embed-video-container iframe {
   margin: 0;
-}
-.post-snippet .inner {
-  background: #f8f8f8 !important;
-  padding: 24px;
-}
-.post-snippet .inner:hover {
-    background: #e8e8e8 !important;
 }
 .comments-list,
 .comments-list ul {
@@ -6382,9 +6375,9 @@ blockquote .author {
   -webkit-column-count: 2;
 }
 @media all and (max-width: 767px) {
-  br {
+  /*br {
     display: none;
-  }
+  }*/
   blockquote {
     font-size: 16px;
     line-height: 32px;
@@ -6744,6 +6737,11 @@ footer.bg-green li,
     border-color: #bbb;
     color: #fff;
 }
+.btn-orange {
+    background: #ff9900;
+    border: none;
+    color: #fff;
+}
 .btn-white,
 .image-bg .btn,
 .image-bg .btn:visited {
@@ -6769,6 +6767,19 @@ footer.bg-green li,
 }
 .image-bg .btn-grey:hover {
     border-color: #9d9d9d;
+}
+.image-bg .btn-orange {
+    background: #ff9900;
+    border: none;
+    color: #fff;
+}
+.image-bg .btn-orange:visited,
+.image-bg .btn-orange:visited:hover {
+    color: #fff;
+}
+.image-bg .btn-orange:hover {
+    background: #ffcc99;
+    border: none;
 }
 .btn-rounded {
   border-radius: 25px;
@@ -6800,6 +6811,14 @@ body.btn-rounded .btn {
 }
 .btn-filled:visited {
   color: #fff;
+}
+.btn-orange:visited,
+.btn-orange:visited:hover {
+    color: #fff;
+}
+.btn-orange:hover {
+    background: #ffcc99;
+    border: none;
 }
 .btn.bg-dark {
   color: #fff;
@@ -8379,7 +8398,8 @@ button[type="submit"] .form-loading {
   }
 }
 .icon-tabs .tabs li {
-  width: 24.5%;
+  /*width: 24.5%;*/
+  width: 9.5%;
   margin-bottom: 24px;
 }
 .icon-tabs .tab-title {
@@ -8388,6 +8408,8 @@ button[type="submit"] .form-loading {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: .5;
+
+  background: green;
 }
 .icon-tabs .tab-title:hover {
   opacity: 1;
@@ -8417,9 +8439,9 @@ button[type="submit"] .form-loading {
 }
 @media all and (max-width: 767px) {
   .icon-tabs .tabs li {
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     margin-right: 0;
-    width: 49%;
+    width: 29%;
   }
   .icon-tabs .tab-title i {
     font-size: 32px;
@@ -10183,8 +10205,13 @@ video {
   margin: 0;
 }
 .post-snippet .inner {
-  background: #fff;
+  background: #f8f8f8;
   padding: 24px;
+  min-height: 320px;
+  cursor:pointer;
+}
+.post-snippet .inner:hover {
+    background: #e8e8e8 !important;
 }
 .comments-list,
 .comments-list ul {
