@@ -1,0 +1,446 @@
+/**
+ * CONTRAST
+ * ------
+ * Note: Prefix the template styles with <TEMPLATE FOLDER NAME>-horizontal/vertical
+ */
+
+/**************************
+    - Horizontal Tabs -
+**************************/
+div.contrast-horizontal {	
+	position:relative;
+	clear:both;
+	width:100%;
+	border:1px solid #d1d1d1;
+	border-radius:5px;
+	background-color:#f5f5f5;
+	box-shadow:0 0 4px rgba(0, 0, 0, 0.06);
+}
+
+/*******************************************
+    - Directional buttons (Horizontal) -
+*******************************************/
+div.contrast-horizontal > div.st_tabs a.st_prev, 
+div.contrast-horizontal > div.st_tabs a.st_next {
+	display:none;
+	position:absolute;
+	top:0px;
+	z-index:110;
+	height:48px;
+	width:48px;
+	text-indent:-999em;
+	outline:none;
+	background:transparent url("images/arrows_h.png") no-repeat;
+}
+
+div.contrast-horizontal > div.st_tabs a.st_prev {
+	left:0px;
+	border-right:1px solid #dcdcdc;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	background-position:center 18px;
+}
+
+div.contrast-horizontal > div.st_tabs a.st_prev:hover {
+	background-color:#fff;
+}
+
+div.contrast-horizontal > div.st_tabs a.st_next {
+	right:0px;
+	border-left:1px solid #dcdcdc;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	background-position:center -16px;
+}
+
+div.contrast-horizontal > div.st_tabs a.st_next:hover {
+	background-color:#fff;
+}
+
+div.contrast-horizontal > div.st_tabs a.st_prev.st_btn_disabled, 
+div.contrast-horizontal > div.st_tabs a.st_next.st_btn_disabled {
+	cursor:default;
+}
+
+div.contrast-horizontal > div.st_tabs a.st_btn_disabled:hover {
+	background-color:#f5f5f5;
+}
+
+div.contrast-horizontal > div.st_tabs a.st_prev.st_btn_disabled {
+	background-position:center -118px;
+}
+
+div.contrast-horizontal > div.st_tabs a.st_next.st_btn_disabled {
+	background-position:center -152px;
+}
+
+/****************************
+    - Tabs (Horizontal) -
+****************************/
+div.contrast-horizontal > div.st_tabs {	
+	position:relative;
+	z-index:100;		
+	width:100% !important;	
+	height:49px;
+	overflow:hidden;
+	background:url("images/border_bottom.png") repeat-x 0 bottom;
+}
+
+div.contrast-horizontal > div.st_tabs div.st_tabs_wrap {
+	position:relative !important;
+	width:100%;
+	height:100%;
+}
+
+div.contrast-horizontal.st_sliding_active > div.st_tabs div.st_tabs_wrap {
+	width:auto !important;
+	margin:0px 48px;
+}
+
+div.contrast-horizontal > div.st_tabs ul {
+	width:10000px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+div.contrast-horizontal > div.st_tabs ul li {
+	display:block;
+	float:left;
+	margin:0px;
+}
+
+div.contrast-horizontal > div.st_tabs ul li.st_li_active {
+	padding-bottom:1px;
+	background:#fff url("images/arrow_bottom.png") no-repeat center bottom;
+	border-top-left-radius:5px;
+}
+
+div.contrast-horizontal > div.st_tabs ul li a {
+	display:block;
+	position:relative;
+	height:48px;
+	margin:0px;
+	padding:0 40px;
+	font:12px/48px Arial, Helvetica, sans-serif;
+	color:#6a6a6a;
+	text-decoration:none;
+	outline:none;
+	border-right:1px solid #e1e1e1;
+	border-left:1px solid #fff;
+}
+
+div.contrast-horizontal > div.st_tabs ul a:hover {
+	color:#000;
+	background-color:#fff;
+}
+
+div.contrast-horizontal > div.st_tabs ul li a.st_tab_first {
+	border-left:0 none;
+}
+
+div.contrast-horizontal > div.st_tabs ul li a.st_tab_active {
+	color:#000;
+}
+
+div.contrast-horizontal > div.st_tabs ul li a.st_tab_active:hover {
+	background:none;
+}
+
+div.contrast-horizontal > div.st_tabs ul li a.st_tab_last {
+	border-right:0 none;
+}
+
+/*******************************
+    - Content (Horizontal) -
+*******************************/
+div.contrast-horizontal > div.st_views {
+	position:relative;
+	z-index:5;
+	height:400px;
+	padding:0px !important;
+	line-height:19px;
+	border-top:1px solid #d1d1d1;
+	border-top:0 none;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	background-color:#fff;
+	overflow:hidden;
+}
+
+div.contrast-horizontal > div.st_views div.st_view {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background-image:none;
+	-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;
+	background-repeat:no-repeat !important;
+	background-position:center center !important;
+	background-color:transparent !important;
+}
+
+div.contrast-horizontal > div.st_views div.st_view_inner {
+	padding:30px;
+}
+
+div.contrast-horizontal > div.st_views div.st_view_first {
+	display:block;
+}
+
+/*******************************************
+    - Bottom aligned tabs (Horizontal) -
+*******************************************/
+div.contrast-horizontal.align_bottom {
+	padding-bottom:49px;
+}
+
+div.contrast-horizontal.align_bottom > div.st_tabs a.st_prev,
+div.contrast-horizontal.align_bottom > div.st_tabs a.st_next {
+	top:1px;
+}
+
+div.contrast-horizontal.align_bottom > div.st_tabs {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	background:url("images/border_top.png") repeat-x 0 top;
+	box-shadow:0 0 4px rgba(0, 0, 0, 0.06);
+}
+
+div.contrast-horizontal.align_bottom > div.st_tabs div.st_tabs_wrap {
+	padding-top:1px;
+}
+
+div.contrast-horizontal.align_bottom > div.st_tabs ul li.st_li_active {
+	margin-top:-1px;
+	padding-top:1px;
+	padding-bottom:0;
+	background:#fff url("images/arrow_top.png") no-repeat center top;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:5px;
+}
+
+div.contrast-horizontal.align_bottom > div.st_views {
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	border-bottom-right-radius:0px;
+	border-bottom-left-radius:0px;
+}
+
+/************************
+    - Vertical tabs -
+************************/
+div.contrast-vertical {
+	position:relative;
+	clear:both;
+	width:100%;
+	box-shadow:0 0 4px rgba(0, 0, 0, 0.06);
+}
+
+/*************************************
+    - Control buttons (Vertical) -
+*************************************/
+div.contrast-vertical > div.st_tabs a.st_prev, 
+div.contrast-vertical > div.st_tabs a.st_next {	
+	display:none;
+	float:left;
+	position:relative;
+	z-index:100;	
+	height:36px;
+	width:103px;
+	text-indent:-999em;
+	border-right:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+	outline:none;	
+	background:#f5f5f5 url("images/arrows_v.png") no-repeat;	
+}
+
+div.contrast-vertical > div.st_tabs a.st_prev {
+	background-position:center 11px;
+}
+
+div.contrast-vertical > div.st_tabs a.st_prev:hover {
+	background-color:#fff;
+}
+
+div.contrast-vertical > div.st_tabs a.st_next {
+	border-right-color:#d1d1d1;
+	background-position:center -18px;
+}
+
+div.contrast-vertical > div.st_tabs a.st_next:hover {
+	background-color:#fff;
+}
+
+div.contrast-vertical > div.st_tabs a.st_prev.st_btn_disabled,
+div.contrast-vertical > div.st_tabs a.st_next.st_btn_disabled {
+	cursor:default;
+}
+
+div.contrast-vertical > div.st_tabs a.st_btn_disabled:hover {
+	background-color:#f5f5f5;
+}
+
+div.contrast-vertical > div.st_tabs a.st_prev.st_btn_disabled {
+	background-position:center -105px;
+}
+
+div.contrast-vertical > div.st_tabs a.st_next.st_btn_disabled {
+	background-position:center -134px;
+}
+
+/**************************
+    - Tabs (Vertical) -
+**************************/
+div.contrast-vertical > div.st_tabs {
+	position:relative;
+	z-index:100;
+	float:left;
+	width:208px;
+	height:437px;
+	margin-right:-1px;
+	border:1px solid #d1d1d1;
+	border-right:0 none;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	overflow:hidden;
+	background:#f5f5f5 url("images/border_right.png") repeat-y right 0;
+}
+
+div.contrast-vertical > div.st_tabs div.st_tabs_wrap {
+	position:relative !important;
+	float:left;
+	clear:both;
+}
+
+div.contrast-vertical > div.st_tabs ul {
+	float:left;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+div.contrast-vertical > div.st_tabs ul li {
+	position:relative;
+	float:left;
+	clear:both;
+	margin:0px;
+}
+
+div.contrast-vertical > div.st_tabs ul li.st_li_active {
+	padding-right:1px;
+	background:url("images/arrow_right.png") no-repeat right 0 #fff;
+}
+
+div.contrast-vertical > div.st_tabs ul li a {
+	position:relative;
+	display:block;
+	font:13px/50px Arial, Helvetica, sans-serif;
+	color:#777;
+	text-decoration:none;
+	width:207px;
+	height:48px;
+	margin:0px;
+	text-indent:20px;
+	outline:none;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #e1e1e1;
+}
+
+div.contrast-vertical > div.st_tabs ul li a:hover {
+	color:#000;
+	background-color:#fff;
+}
+
+div.contrast-vertical > div.st_tabs ul li a.st_tab_active {
+	position:relative;
+	z-index:10;
+	font-weight:bold;
+	color:#000000;
+}
+
+div.contrast-vertical > div.st_tabs ul li a.st_tab_active:hover {
+	background:none;
+}
+
+div.contrast-vertical > div.st_tabs ul li a.st_tab_last {
+	border-bottom-color:#f5f5f5;
+}
+
+/*****************************
+    - Content (Vertical) -
+*****************************/
+div.contrast-vertical > div.st_views {
+	position:relative;
+	z-index:5;
+	height:437px;
+	line-height:18px;
+	border:1px solid #d1d1d1;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	background-color:#fff;
+	overflow:hidden;
+}
+
+div.contrast-vertical > div.st_views div.st_view {
+	width:100%;	
+	height:100%;
+	overflow:hidden;
+	background-image:none;
+	background-repeat:no-repeat !important;
+	background-position:center center !important;
+	background-color:transparent !important;
+}
+
+div.contrast-vertical > div.st_views div.st_view_inner {
+	overflow:hidden !important;
+	padding:30px;
+}
+
+div.contrast-vertical > div.st_views div.st_view_first {
+	display:block;
+}
+
+/****************************************
+    - Right aligned tabs (Vertical) -
+****************************************/
+div.contrast-vertical.align_right > div.st_tabs a.st_prev, 
+div.contrast-vertical.align_right > div.st_tabs a.st_next {	
+	border-right:0 none;
+	border-left:1px solid #dcdcdc;
+}
+
+div.contrast-vertical.align_right > div.st_tabs a.st_prev {
+	margin-left:-1px;
+	padding-left:1px;
+}
+
+div.contrast-vertical.align_right > div.st_tabs a.st_next {}
+
+div.contrast-vertical.align_right > div.st_tabs {	
+	float:right;
+	margin-left:-1px;
+	margin-right:0px;
+	padding-left:1px;	
+	border-right:1px solid #d1d1d1;
+	border-left:0 none;	
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
+	background:#f5f5f5 url("images/border_left.png") repeat-y 0 0;
+}
+
+div.contrast-vertical.align_right > div.st_tabs ul li.st_li_active {
+	margin-left:-1px;
+	padding-right:0px;
+	padding-left:1px;
+	background:url("images/arrow_left.png") no-repeat 0 0 #fff;
+}
+
+div.contrast-vertical.align_right > div.st_views {
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:0px;
+	border-bottom-right-radius:0px;
+}

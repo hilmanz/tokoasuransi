@@ -1,0 +1,387 @@
+/**
+ * SEPARATED
+ * ------
+ * Note: Prefix the template styles with <TEMPLATE FOLDER NAME>-horizontal/vertical
+ */
+
+/**************************
+    - Horizontal Tabs -
+**************************/
+div.separated-horizontal { /* The main container */	
+	position:relative;
+	clear:both;
+	width:100%; /* Set the full width */
+}
+
+/*******************************************
+    - Directional buttons (Horizontal) -
+*******************************************/
+div.separated-horizontal > div.st_tabs a.st_prev, 
+div.separated-horizontal > div.st_tabs a.st_next {
+	display:none;
+	position:absolute;
+	top:0px;
+	z-index:110;
+	height:41px;
+	width:43px;
+	text-indent:-999em;
+	border:1px solid #ccc;
+	outline:none;
+	background:#fff url("images/arrows_h.gif") no-repeat;
+}
+
+div.separated-horizontal > div.st_tabs a.st_prev {
+	left:0px;
+	background-position:center 14px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
+div.separated-horizontal > div.st_tabs a.st_prev:hover {
+	background-position:center -46px;
+	background-color:#f8f8f8;
+}
+
+div.separated-horizontal > div.st_tabs a.st_next {
+	right:0px;
+	background-position:center -16px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+div.separated-horizontal > div.st_tabs a.st_next:hover {	
+	background-position:center -76px;
+	background-color:#f8f8f8;
+}
+
+div.separated-horizontal > div.st_tabs a.st_prev.st_btn_disabled, 
+div.separated-horizontal > div.st_tabs a.st_next.st_btn_disabled {
+	cursor:default;
+	background-color:#f8f8f8;
+}
+
+div.separated-horizontal > div.st_tabs a.st_prev.st_btn_disabled {
+	background-position:center -106px;
+}
+
+div.separated-horizontal > div.st_tabs a.st_next.st_btn_disabled {
+	background-position:center -136px;
+}
+
+/****************************
+    - Tabs (Horizontal) -
+****************************/
+div.separated-horizontal > div.st_tabs {		
+	position:relative;
+	z-index:100;		
+	width:100% !important;	
+	height:43px;
+	margin-bottom:12px;
+	overflow:hidden;
+}
+
+div.separated-horizontal.st_sliding_active > div.st_tabs {}
+
+div.separated-horizontal > div.st_tabs div.st_tabs_wrap {
+	position:relative !important;
+	width:100%;
+}
+
+div.separated-horizontal.st_sliding_active > div.st_tabs div.st_tabs_wrap {
+	width:auto !important;
+	margin:0 44px;
+}
+
+div.separated-horizontal > div.st_tabs ul {
+	width:10000px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+div.separated-horizontal > div.st_tabs ul li {
+	display:block;
+	float:left;
+	margin:0px;
+}
+
+div.separated-horizontal > div.st_tabs ul li a {
+	display:block;
+	height:41px;
+	margin:0px;
+	padding:0 30px;
+	font:bold 12px/41px Arial, Helvetica, sans-serif;	
+	color:#6a6a6a;
+	text-decoration:none;
+	outline:none;
+	border:1px solid #ccc;
+	border-left:0 none;
+	background:#f8f8f8;
+	background:-moz-linear-gradient(center top , #fbfbfb, #f8f8f8);
+}
+
+div.separated-horizontal > div.st_tabs ul li a:hover { 
+	color:#333;
+	background:#fbfbfb;
+}
+
+div.separated-horizontal > div.st_tabs ul li a.st_tab_first { 
+	border-left:1px solid #ccc;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
+div.separated-horizontal > div.st_tabs ul li a.st_tab_last {
+	margin-right:0px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+div.separated-horizontal.st_sliding_active > div.st_tabs ul li a.st_tab_first,
+div.separated-horizontal.st_sliding_active > div.st_tabs ul li a.st_tab_last {
+	border-radius:0;
+}
+
+div.separated-horizontal > div.st_tabs ul li a.st_tab_active {
+	background:#fff;
+	color:#5ea600;
+}
+
+/*******************************
+    - Content (Horizontal) -
+*******************************/
+div.separated-horizontal > div.st_views {
+	position:relative;
+	z-index:5;
+	height:388px;
+	padding:0px !important;
+	line-height:19px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	overflow:hidden;
+	border-radius:5px;
+}
+
+div.separated-horizontal > div.st_views div.st_view {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background-image:none;
+	-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;
+	background-repeat:no-repeat !important;
+	background-position:0px 0px !important;
+	background-color:transparent !important;
+}
+
+div.separated-horizontal > div.st_views div.st_view_inner {
+	padding:30px;
+}
+
+div.separated-horizontal > div.st_views div.st_view_first {
+	display:block;
+}
+
+/*******************************************
+    - Bottom aligned tabs (Horizontal) -
+*******************************************/
+div.separated-horizontal.align_bottom {
+	margin-bottom:56px;
+}
+div.separated-horizontal.align_bottom > div.st_tabs { 
+	position:absolute;
+	bottom:-55px;
+	left:0px;
+	margin-bottom:0;
+}
+
+/************************
+    - Vertical tabs -
+************************/
+div.separated-vertical {
+	position:relative;
+	clear:both;
+	width:100%;
+}
+
+/*************************************
+    - Control buttons (Vertical) -
+*************************************/
+div.separated-vertical > div.st_tabs a.st_prev, 
+div.separated-vertical > div.st_tabs a.st_next {	
+	display:none;
+	float:left;
+	position:relative;
+	z-index:100;	
+	height:34px;
+	width:93px;
+	text-indent:-999em;
+	border:1px solid #ccc;
+	outline:none;	
+	background:#fff url("images/arrows_v.gif") no-repeat;	
+}
+
+div.separated-vertical > div.st_tabs a.st_prev {
+	border-right:0 none;
+	background-position:center 13px;
+	border-top-left-radius:5px;
+}
+
+div.separated-vertical > div.st_tabs a.st_prev:hover {
+	background-position:center -51px;
+	background-color:#f5f5f5;
+}
+
+div.separated-vertical > div.st_tabs a.st_next {
+	background-position:center -19px;
+	border-top-right-radius:5px;
+}
+
+div.separated-vertical > div.st_tabs a.st_next:hover {
+	background-position:center -83px;
+	background-color:#f5f5f5;
+}
+
+div.separated-vertical > div.st_tabs a.st_prev.st_btn_disabled,
+div.separated-vertical > div.st_tabs a.st_next.st_btn_disabled {
+	cursor:default;
+	background-color:#f7f7f7;
+}
+
+div.separated-vertical > div.st_tabs a.st_prev.st_btn_disabled {
+	background-position:center -115px;
+}
+
+div.separated-vertical > div.st_tabs a.st_next.st_btn_disabled {
+	background-position:center -147px;
+}
+
+/**************************
+    - Tabs (Vertical) -
+**************************/
+div.separated-vertical > div.st_tabs {  	
+	position:relative;
+	z-index:100;
+	float:left;
+	width:189px;
+	height:412px;
+	margin-right:12px;
+	border-radius:5px;	
+	overflow:hidden;
+}
+
+div.separated-vertical.st_sliding_active > div.st_tabs {}
+
+div.separated-vertical > div.st_tabs div.st_tabs_wrap {
+	position:relative !important;
+	float:left;
+	clear:both;
+}
+
+div.separated-vertical > div.st_tabs ul {
+	float:left;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+div.separated-vertical > div.st_tabs ul li {
+	position:relative;
+	float:left;
+	clear:both;
+	margin:0px;
+}
+
+div.separated-vertical > div.st_tabs ul li a {
+	display:block;
+	width:167px;
+	margin:0;
+	padding:14px 0 14px 20px;
+	font:bold 12px/18px Arial, Helvetica, sans-serif;
+	color:#5c5c5c;
+	text-decoration:none;
+	outline:none;
+	border:1px solid #ccc;
+	border-top:0 none;
+	background-color:#f8f8f8;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#f4f4f4));
+	background-image:-webkit-linear-gradient(top, #f9f9f9, #f4f4f4);
+	background-image:-moz-linear-gradient(top, #f9f9f9, #f4f4f4);
+	background-image:-ms-linear-gradient(top, #f9f9f9, #f4f4f4);
+	background-image:-o-linear-gradient(top, #f9f9f9, #f4f4f4);
+}
+
+div.separated-vertical > div.st_tabs ul li a:hover {
+	color:#333;
+	background:#fbfbfb;
+}
+
+div.separated-vertical > div.st_tabs ul li a.st_tab_first {
+	border-top:1px solid #ccc;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+div.separated-vertical.st_sliding_active > div.st_tabs ul li a.st_tab_first {
+	border-top:0 none;
+	border-radius:0;
+}
+
+div.separated-vertical > div.st_tabs ul li a.st_tab_last {
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+div.separated-vertical > div.st_tabs ul li a.st_tab_active {
+	color:#5ea600;
+	background:#fff;
+}
+
+div.separated-vertical > div.st_tabs ul li a span {
+	display:block;
+	clear:both;
+	font:italic normal 11px/11px Georgia, "Times New Roman", Times, serif;
+	color:#838383;
+	padding-top:3px;	
+}
+
+/*****************************
+    - Content (Vertical) -
+*****************************/
+div.separated-vertical > div.st_views {
+	position:relative;
+	z-index:5;
+	height:411px;
+	line-height:18px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+div.separated-vertical > div.st_views div.st_view {
+	width:100%;	
+	height:100%;
+	overflow:hidden;
+	background-image:none;
+	background-repeat:no-repeat !important;
+	background-position:0px 0px !important;
+	background-color:transparent !important;
+}
+
+div.separated-vertical > div.st_views div.st_view_inner {
+	overflow:hidden !important;
+	padding:30px;
+}
+
+div.separated-vertical > div.st_views div.st_view_first {
+	display:block;
+}
+
+/****************************************
+    - Right aligned tabs (Vertical) -
+****************************************/
+div.separated-vertical.align_right > div.st_tabs {	
+	float:right;
+	margin-right:0px;
+	margin-left:15px;
+}

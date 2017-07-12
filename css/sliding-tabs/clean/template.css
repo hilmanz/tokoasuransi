@@ -1,0 +1,393 @@
+/**
+ * CLEAN
+ * ------
+ * Note: Prefix the template styles with <TEMPLATE FOLDER NAME>-horizontal/vertical
+ */
+
+/**************************
+    - Horizontal Tabs -
+**************************/
+div.clean-horizontal {
+	position:relative;
+	clear:both;
+	width:100%;
+}
+
+/*******************************************
+    - Directional buttons (Horizontal) -
+*******************************************/
+div.clean-horizontal > div.st_tabs a.st_prev, 
+div.clean-horizontal > div.st_tabs a.st_next {
+	display:none;
+	position:absolute;
+	top:0px;
+	z-index:110;
+	height:43px;
+	width:43px;
+	text-indent:-999em;
+	border:1px solid #ccc;
+	outline:none;
+	background:#fff url("images/arrows_h.gif") no-repeat;	
+}
+
+div.clean-horizontal > div.st_tabs a.st_prev {
+	left:0px;
+	background-position:center 15px;
+}
+
+div.clean-horizontal > div.st_tabs a.st_prev:hover {	
+	background-position:center -45px;
+	background-color:#f8f8f8;
+}
+
+div.clean-horizontal > div.st_tabs a.st_next {
+	right:0px;
+	background-position:center -15px;
+}
+
+div.clean-horizontal > div.st_tabs a.st_next:hover {
+	background-position:center -75px;
+	background-color:#f8f8f8;
+}
+
+div.clean-horizontal > div.st_tabs a.st_prev.st_btn_disabled, 
+div.clean-horizontal > div.st_tabs a.st_next.st_btn_disabled {
+	cursor:default;
+	background-color:#f8f8f8;
+}
+
+div.clean-horizontal > div.st_tabs a.st_prev.st_btn_disabled {
+	background-position:center -105px;
+}
+
+div.clean-horizontal > div.st_tabs a.st_next.st_btn_disabled {
+	background-position:center -135px;
+}
+
+/****************************
+    - Tabs (Horizontal) -
+****************************/
+div.clean-horizontal > div.st_tabs {	
+	position:relative;
+	z-index:100;		
+	width:100% !important;	
+	height:45px;
+	margin-bottom:-1px;
+	overflow:hidden;
+}
+div.clean-horizontal.st_sliding_active > div.st_tabs {
+	height:45px;
+}
+div.clean-horizontal > div.st_tabs div.st_tabs_wrap {
+	position:relative !important;
+	width:100%;
+}
+
+div.clean-horizontal.st_sliding_active > div.st_tabs div.st_tabs_wrap {
+	width:auto !important;
+	margin:0px 44px;
+}
+
+div.clean-horizontal > div.st_tabs ul {
+	width:10000px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+div.clean-horizontal > div.st_tabs ul li {
+	display:block;
+	float:left;
+	margin:0px;
+}
+
+div.clean-horizontal > div.st_tabs ul li a {
+	display:block;
+	height:43px;
+	margin:0px;
+	padding:0 28px;
+	font:bold 12px/43px Arial, Helvetica, sans-serif;	
+	color:#6a6a6a;
+	text-decoration:none;
+	outline:none;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background:#f8f8f8;
+	background:-moz-linear-gradient(center top , #fbfbfb, #f8f8f8);
+}
+
+div.clean-horizontal > div.st_tabs ul li a:hover {
+	color:#333;
+	background:#fbfbfb;
+}
+
+div.clean-horizontal > div.st_tabs ul li a.st_tab_first {
+	border-left:1px solid #ccc;
+}
+
+div.clean-horizontal.st_sliding_active > div.st_tabs ul li a.st_tab_first {
+	border-left:0 none;
+}
+
+div.clean-horizontal.st_sliding_active > div.st_tabs ul li a.st_tab_last {
+	border-right:0 none;
+}
+
+div.clean-horizontal > div.st_tabs ul li a.st_tab_active {
+	padding-bottom:2px;
+	background:#fff;
+	color:#5ea600;
+}
+
+/*******************************
+    - Content (Horizontal) -
+*******************************/
+div.clean-horizontal > div.st_views {
+	position:relative;
+	z-index:5;
+	height:400px;
+	padding:0px !important;
+	line-height:19px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	overflow:hidden;
+}
+
+div.clean-horizontal > div.st_views div.st_view {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background-image:none;
+	-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;
+	background-repeat:no-repeat !important;
+	background-position:0px 0px !important;
+	background-color:transparent !important;
+}
+
+div.clean-horizontal > div.st_views div.st_view_inner {
+	padding:30px;
+}
+
+div.clean-horizontal > div.st_views div.st_view_first {
+	display:block;
+}
+
+/*******************************************
+    - Bottom aligned tabs (Horizontal) -
+*******************************************/
+div.clean-horizontal.align_bottom {
+	margin-bottom:45px;
+}
+
+div.clean-horizontal.align_bottom > div.st_tabs {
+	position:absolute;
+	bottom:-44px;
+	left:0px;
+	margin-bottom:0px;
+}
+
+div.clean-horizontal.align_bottom.st_sliding_active > div.st_tabs {
+	border-top:0 none;
+}
+
+div.clean-horizontal.align_bottom > div.st_tabs ul li a.st_tab_active {
+	padding-bottom:0px;
+	border-top-color:#fff;
+}
+
+div.clean-horizontal.align_bottom > div.st_tabs ul li a {
+	border-bottom:1px solid #ccc;
+}
+
+
+/************************
+    - Vertical tabs -
+************************/
+div.clean-vertical {
+	position:relative;
+	clear:both;
+	width:100%;
+}
+
+/*************************************
+    - Control buttons (Vertical) -
+*************************************/
+div.clean-vertical > div.st_tabs a.st_prev, 
+div.clean-vertical > div.st_tabs a.st_next {
+	display:none;
+	float:left;
+	position:relative;
+	z-index:100;	
+	height:34px;
+	width:93px;
+	text-indent:-999em;
+	border:1px solid #ccc;
+	border-top:0 none;
+	outline:none;	
+	background:#fff url("images/arrows_v.gif") no-repeat;	
+}
+
+div.clean-vertical > div.st_tabs a.st_prev {
+	border-right:0 none;
+	background-position:center 13px;
+}
+
+div.clean-vertical > div.st_tabs a.st_prev:hover {
+	background-position:center -51px;
+	background-color:#f5f5f5;
+}
+
+div.clean-vertical > div.st_tabs a.st_next {
+	
+	background-position:center -19px;
+}
+div.clean-vertical > div.st_tabs a.st_next:hover {
+	background-position:center -83px;
+	background-color:#f5f5f5;
+}
+
+div.clean-vertical > div.st_tabs a.st_prev.st_btn_disabled,
+div.clean-vertical > div.st_tabs a.st_next.st_btn_disabled {
+	cursor:default;
+	background-color:#f7f7f7;
+}
+
+div.clean-vertical > div.st_tabs a.st_prev.st_btn_disabled {
+	background-position:center -115px;
+}
+
+div.clean-vertical > div.st_tabs a.st_next.st_btn_disabled {
+	background-position:center -147px;
+}
+
+/**************************
+    - Tabs (Vertical) -
+**************************/
+div.clean-vertical > div.st_tabs { 	
+	position:relative;
+	z-index:100;
+	float:left;
+	width:189px;
+	height:401px;
+	margin-right:-1px;
+	border-top:1px solid #ccc;
+	overflow:hidden;
+}
+
+div.clean-vertical > div.st_tabs div.st_tabs_wrap {
+	position:relative !important;
+	float:left;
+	clear:both;
+}
+
+div.clean-vertical > div.st_tabs ul {
+	float:left;
+	width:188px;	
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+div.clean-vertical > div.st_tabs ul li {
+	position:relative;
+	float:left;
+	clear:both;
+	margin:0px;
+}
+
+div.clean-vertical > div.st_tabs ul li a {
+	display:block;
+	width:167px;
+	height:32px;
+	margin:0px;
+	padding:14px 0 14px 20px;
+	font:bold 12px/18px Arial, Helvetica, sans-serif;
+	color:#5c5c5c;
+	text-decoration:none;
+	outline:none;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+	background-color:#f8f8f8;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#f4f4f4));
+	background-image:-webkit-linear-gradient(top, #f9f9f9, #f4f4f4);
+	background-image:-moz-linear-gradient(top, #f9f9f9, #f4f4f4);
+	background-image:-ms-linear-gradient(top, #f9f9f9, #f4f4f4);
+	background-image:-o-linear-gradient(top, #f9f9f9, #f4f4f4);
+}
+
+div.clean-vertical > div.st_tabs ul li a:hover {
+	color:#333;
+	background:#fbfbfb;
+}
+
+div.clean-vertical > div.st_tabs ul li a.st_tab_active {
+	position:relative;
+	z-index:10;
+	color:#5ea600;
+	padding-right:1px;
+	background:#fff;
+}
+
+div.clean-vertical > div.st_tabs ul li a span {
+	display:block;
+	clear:both;
+	font-size:11px;
+	font-weight:normal;
+	color:#838383;
+	padding-top:3px;	
+}
+
+/*****************************
+    - Content (Vertical) -
+*****************************/
+div.clean-vertical > div.st_views {
+	position:relative;
+	z-index:5;
+	height:400px;
+	line-height:18px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	overflow:hidden;
+}
+
+div.clean-vertical > div.st_views div.st_view {
+	width:100%;	
+	height:100%;
+	overflow:hidden;
+	background-image:none;
+	background-repeat:no-repeat !important;
+	background-position:0px 0px !important;
+	background-color:transparent !important;
+}
+
+div.clean-vertical > div.st_views div.st_view_inner {
+	overflow:hidden !important;
+	padding:30px;
+}
+
+div.clean-vertical > div.st_views div.st_view_first {
+	display:block;
+}
+
+/****************************************
+    - Right aligned tabs (Vertical) -
+****************************************/
+div.clean-vertical.align_right > div.st_tabs a.st_prev {
+	margin-left:0px;
+}
+
+div.clean-vertical.align_right > div.st_tabs a.st_next {
+	margin-right:-1px;
+}
+
+div.clean-vertical.align_right > div.st_tabs { 	
+	float:right;
+	margin-left:-1px;
+	margin-right:0px;
+}
+
+div.clean-vertical.align_right > div.st_tabs ul li a.st_tab_active {
+	padding-right:0px;
+	border-left-color:#ffffff;
+}
