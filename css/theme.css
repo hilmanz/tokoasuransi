@@ -885,6 +885,11 @@ footer.bg-green li,
     border-color: #bbb;
     color: #fff;
 }
+.btn-orange {
+    background: #ff9900;
+    border: none;
+    color: #fff;
+}
 .btn-white,
 .image-bg .btn,
 .image-bg .btn:visited {
@@ -910,6 +915,19 @@ footer.bg-green li,
 }
 .image-bg .btn-grey:hover {
     border-color: #9d9d9d;
+}
+.image-bg .btn-orange {
+    background: #ff9900;
+    border: none;
+    color: #fff;
+}
+.image-bg .btn-orange:visited,
+.image-bg .btn-orange:visited:hover {
+    color: #fff;
+}
+.image-bg .btn-orange:hover {
+    background: #ffcc99;
+    border: none;
 }
 .btn-rounded {
   border-radius: 25px;
@@ -941,6 +959,14 @@ body.btn-rounded .btn {
 }
 .btn-filled:visited {
   color: #fff;
+}
+.btn-orange:visited,
+.btn-orange:visited:hover {
+    color: #fff;
+}
+.btn-orange:hover {
+    background: #ffcc99;
+    border: none;
 }
 .btn.bg-dark {
   color: #fff;
@@ -3020,7 +3046,9 @@ button[type="submit"] .form-loading {
   line-height: 50px;
 }
 .calc-list li {
-    height: 47px;
+    padding-top:5px;
+    padding-left: 20px;
+    height: 60px;
     border-bottom: 1px solid rgba(119,124,130, .3);
 }
 ul.calc-list > li:hover {
@@ -3052,7 +3080,7 @@ ul.calc-list > li:hover {
   position: absolute;
   right:0;
   margin-top: 15px;
-  margin-right: 20px;
+  margin-right: 60px;
 }
 .calc-list a:before {
     color: #777c82;
@@ -3063,7 +3091,7 @@ ul.calc-list > li:hover {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    font-size: 11px;
+    font-size: 18px;
     display: inline-block;
   margin-right: 8px;
 }
@@ -4326,6 +4354,15 @@ video {
 }
 .post-snippet .embed-video-container iframe {
   margin: 0;
+}
+.post-snippet .inner {
+  background: #f8f8f8;
+  padding: 24px;
+  min-height: 320px;
+  cursor:pointer;
+}
+.post-snippet .inner:hover {
+    background: #e8e8e8 !important;
 }
 .comments-list,
 .comments-list ul {
