@@ -573,6 +573,9 @@ ul.lead li {
 .bg-light-green {
     background: #7ec233;
 }
+.bg-dark-blue {
+  background:#293541;
+}
 .color-body {
   color: #666;
 }
@@ -581,6 +584,9 @@ ul.lead li {
 }
 .color-red {
   color: #e31d3b !important;
+}
+.color-black {
+    color:#000 !important;
 }
 .color-white {
   color: #fff;
