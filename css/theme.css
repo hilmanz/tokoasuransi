@@ -1051,6 +1051,11 @@ nav .btn,
 .logo {
   max-height: 100%;
 }
+@media all and (max-width: 1100px) {
+    .logo {
+        max-height: 70%;
+    }
+}
 .logo-light {
   display: none;
 }
@@ -1100,6 +1105,11 @@ nav.bg-dark .logo-dark {
   -moz-transition: all 0.3s ease;
   max-width: 100%;
   white-space: normal;
+}
+@media all and (min-width: 960px) {
+    .menu li a {
+        letter-spacing: -.5px;
+    }
 }
 .menu li a:hover {
   opacity: 1 !important;
@@ -1349,9 +1359,14 @@ nav .cart-overview a {
 .nav-open .mobile-toggle {
   border-bottom: 1px solid #ccc;
 }
-@media all and (max-width: 1120px) {
+/*@media all and (max-width: 1120px) {
   .menu > li {
     margin-right: 24px;
+  }
+}*/
+@media all and (min-width: 960px) {
+  .menu > li {
+    margin-right: 15px;
   }
 }
 .has-offscreen-nav .main-container {
@@ -1579,7 +1594,7 @@ nav .cart-overview a {
     border-bottom: none !important;
   }
   .mobile-toggle i {
-    line-height: 53px !important;
+    line-height: 80px !important;
   }
   .mobile-toggle.absolute-xs {
     position: absolute;
@@ -1911,7 +1926,7 @@ textarea:focus {
   font-weight: 300;
   text-align: center;
   letter-spacing: 1px;
-  color: #777;
+  color: yellowgreen;
   font-size: 11px;
 }
 :-moz-placeholder {
@@ -1919,7 +1934,7 @@ textarea:focus {
     font-weight: 300;
     text-align: center;
   letter-spacing: 1px;
-  color: #777;
+  color: yellowgreen;
   font-size: 11px;
 }
 ::-moz-placeholder {
@@ -1927,15 +1942,15 @@ textarea:focus {
     font-weight: 300;
     text-align: center;
   letter-spacing: 1px;
-  color: #777;
-  font-size: 11px;
+  color: yellowgreen;
+  font-size: 14px;
 }
 :-ms-input-placeholder {
     font-family: 'Open Sans';
     font-weight: 300;
     text-align: center;
   letter-spacing: 1px;
-  color: #777;
+  color: yellowgreen;
   font-size: 11px;
 }
 input.transparent::-webkit-input-placeholder,
@@ -2053,7 +2068,7 @@ select:hover {
   width: 50px;
   height: 25px;
   border-radius: 25px;
-  border: 1px solid #92ce41;
+  border: 1px solid #ddd;
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -2069,7 +2084,7 @@ select:hover {
   height: 19px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0);
-  border: 1px solid #92ce41;
+  border: 1px solid #ddd;
   position: relative;
   top: 2px;
   left: 2px;
@@ -2082,7 +2097,7 @@ select:hover {
   transform: translate3d(25px, 0, 0);
   -webkit-transform: translate3d(25px, 0, 0);
   -moz-transform: translate3d(25px, 0, 0);
-  background: #92ce41;
+  background: #ddd;
 }
 .checkbox-option input {
   width: 0;
