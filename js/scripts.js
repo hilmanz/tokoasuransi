@@ -19,7 +19,10 @@ $(document).ready(function() {
     $("h5.ta-title-chars").text(function(index, currentText) {
         return currentText.substr(0, 40);
     });
-    
+
+    //Sliding tabs
+    $("#slidingtabs").slidingTabs();
+
     // Smooth scroll to inner links
 
     $('.inner-link').each(function(){
