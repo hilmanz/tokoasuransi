@@ -567,6 +567,9 @@ ul.lead li {
 .bg-dark {
   background: #292929;
 }
+.bg-light-grey {
+  background: #e7e7e7;
+}
 .bg-green {
     background: #439414;
 }
