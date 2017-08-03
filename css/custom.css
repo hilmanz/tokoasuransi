@@ -27,6 +27,7 @@
 .radio .cr .cr-icon {
     position: absolute;
     font-size: .8em;
+    color: #9dd154;
     line-height: 0;
     top: 50%;
     left: 20%;
@@ -57,4 +58,33 @@
 .checkbox label input[type="checkbox"]:disabled + .cr,
 .radio label input[type="radio"]:disabled + .cr {
     opacity: .5;
+}
+
+.login .input-group,
+.signup .input-group {
+    margin-bottom:24px;
+}
+
+.login .input-group-addon,
+.signup .input-group-addon {
+    background-color: #9dd154;
+    border-radius:0;
+}
+.login .input-group-addon i,
+.signup .input-group-addon i {
+    font-size: 22px;
+}
+.login input,
+.signup input {
+    background-color: #fff;
+}
+.login input[type="submit"],
+.signup input[type="submit"] {
+    background-color: #fc851e;
+    border:0;
+}
+.login input[type="submit"]:hover,
+.signup input[type="submit"]:hover {
+    background-color: #439414;
+    border: 2px solid #fff;
 }

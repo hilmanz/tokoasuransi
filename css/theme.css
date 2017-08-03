@@ -886,7 +886,7 @@ footer.bg-green li,
 .btn-grey {
     background: #bbb;
     border-color: #bbb;
-    color: #fff;
+    color: #fff !important;
 }
 .btn-orange {
     background: #ff9900;
