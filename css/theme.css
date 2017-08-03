@@ -986,6 +986,31 @@ body.btn-rounded .btn {
   background: #fff;
   color: #92ce41;
 }
+
+/**/
+.button{display: inline-block; vertical-align: bottom; text-align: center; position: relative; cursor: pointer; font-size: 14px; color: #000; text-transform: uppercase; font-weight: 700; line-height: 40px; transition: all .3s; -webkit-transition: all .3s;}
+.button.light{color: #fff;}
+.button:before{background: currentColor; left: 0; right: 0; position: absolute; bottom: 0; height: 2px; content: ""; transition: all .3s; -webkit-transition: all .3s;}
+.button:hover:before{left: -10px; right: -10px; bottom: 50%;}
+.play-button{width: 70px; height: 70px; margin: -35px 0 0 -35px; position: absolute; left: 50%; top: 50%; background: url(../img/icon-1.png) center center no-repeat; cursor: pointer;}
+.play-button:before{position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 3px #fff solid; border-radius: 50%; -webkit-border-radius: 50%; content: ""; opacity: 0; transform: scale(1.5); -webkit-transform: scale(1.5); transition: all .3s; -webkit-transition: all .3s;}
+.play-button:hover:before{opacity: 1; transform: scale(1); -webkit-transform: scale(1);}
+.button.style-1{font-size: 12px; line-height: 20px; color: #898989; text-transform: uppercase; padding: 10px 20px; background: #ebebeb;}
+.button.style-1:before{display: none;}
+.button.style-1:hover, .button.style-1.active{background: #000; color: #fff;}
+.button.style-2{font-size: 12px; line-height: 20px; color: #fff; text-transform: uppercase; padding: 10px 20px; background: #000;}
+.button.style-2:before{display: none;}
+.button.style-2:hover, .button.style-2.active{background: #ebebeb; color: #898989;}
+.button.style-3{font-size: 12px; line-height: 20px; color: #fff; text-transform: uppercase; padding: 10px 20px; background: #000;}
+.button.style-3:before{display: none;}
+.button.style-3:hover, .button.style-3.active{background: #fff; color: #000;}
+.button .fa{display: inline-block; margin-right: 10px;}
+.button.block{display: block;}
+.button-close{display: inline-block; vertical-align: middle; background: url(../img/icon-6.png) 50% 50% no-repeat; width: 40px; height: 40px; cursor: pointer; position: relative; transition: all .3s; -webkit-transition: all .3s;}
+.button-close:hover{background-color: #ebebeb;}
+.buttons-wrapper{margin-bottom: -10px;}
+.buttons-wrapper .button{margin: 0 5px 10px 5px;}
+
 /*!---------- 7. NAVIGATION ----------*/
 .nav-container {
   -webkit-backface-visibility: hidden;
@@ -5191,6 +5216,8 @@ video {
     top: 0;
   }
 }
+
+
 /*!---------- 36. FOOTERS ----------*/
 footer.bg-dark a,
 footer.bg-green a,

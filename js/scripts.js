@@ -21,11 +21,11 @@ $(document).ready(function() {
     });
 
     //Sliding tabs
-    $("#slidingtabs").slidingTabs(
+    /*$("#slidingtabs").slidingTabs(
     	{
     		touchSupport:true
     	}
-    );
+    );*/
 
     // Smooth scroll to inner links
 
@@ -515,6 +515,7 @@ $(document).ready(function() {
         jQuery(this).siblings('iframe').attr('src', '');
         jQuery(this).siblings('video').get(0).pause();
     });
+
 
     // Checkboxes
 
