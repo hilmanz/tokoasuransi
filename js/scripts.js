@@ -21,11 +21,11 @@ $(document).ready(function() {
     });
 
     //Sliding tabs
-    /*$("#slidingtabs").slidingTabs(
+    $("#slidingtabs").slidingTabs(
     	{
     		touchSupport:true
     	}
-    );*/
+    );
 
     // Smooth scroll to inner links
 
